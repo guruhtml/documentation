@@ -36,23 +36,23 @@
 ```html
 <!-- Плохо -->
 <div class="block">
-∙∙<div class="block__element">CSSSR</div>
+∙∙<div class="block__element">lorem ipsum</div>
 </div>
 
 <!-- Хорошо -->
 <div class="block">
-――――<div class="block__element">CSSSR</div>
+――――<div class="block__element">lorem ipsum</div>
 </div>
 ```
 
 - Блочные элементы должны иметь перенос на новую строку, один строчный элемент можно оставлять на месте. Если строчных элементов больше одного или контента достаточно много, то следует переносить.
 ```html
 <!-- Плохо -->
-<div class="block"><div class="block__element">CSSSR</div></div>
+<div class="block"><div class="block__element">lorem ipsum</div></div>
 
 <!-- Хорошо -->
 <div class="block">
-  <div class="block__element">CSSSR</div>
+  <div class="block__element">lorem ipsum</div>
 </div>
 ```
 
@@ -94,52 +94,52 @@
 </span>
 ```
 
-- После закрывающихся тегов не должно быть лишних пробелов и/или табов. Для автоудаления можно настроить свой редактор кода. Для Sublime Text можно посмотреть в репе [sputnik](https://github.com/CSSSR/sputnik/wiki/Софт).
+- После закрывающихся тегов не должно быть лишних пробелов и/или табов. Для автоудаления можно настроить свой редактор кода.
 ```html
 <!-- Плохо -->
 <div class="block">∙
-  <div class="block__element">CSSSR</div>∙∙∙∙
+  <div class="block__element">lorem ipsum</div>∙∙∙∙
 </div>――――――――
 
 <!-- Хорошо -->
 <div class="block">
-  <div class="block__element">CSSSR</div>
+  <div class="block__element">lorem ipsum</div>
 </div>
 ```
 
 - Названия тегов, атрибутов и значений свойств (кроме текстовых данных) должны быть в нижнем регистре.
 ```html
 <!-- Плохо -->
-<INPUT TYPE="TEXT" VALUE="CSSSR">
+<INPUT TYPE="TEXT" VALUE="LOREM">
 
 <!-- Хорошо -->
-<input type="text" value="CSSSR">
+<input type="text" value="lorem">
 ```
 
 - Всегда используйте двойные кавычки `""` для значений атрибутов.
 ```html
 <!-- Плохо -->
 <div class=block>
-  <div class=block__element>CSSSR</div>
+  <div class=block__element>lorem ipsum</div>
 </div>
 
 <div class='block'>
-  <div class='block__element'>CSSSR</div>
+  <div class='block__element'>lorem ipsum</div>
 </div>
 
 <!-- Хорошо -->
 <div class="block">
-  <div class="block__element">CSSSR</div>
+  <div class="block__element">lorem ipsum</div>
 </div>
 ```
 
 - Не добавляйте слэш `/` в конец одиночного тега — в HTML5 он необязателен.
 ```html
 <!-- Плохо -->
-<input type="text" value="CSSSR"/>
+<input type="text" value="lorem"/>
 
 <!-- Хорошо -->
-<input type="text" value="CSSSR">
+<input type="text" value="lorem">
 ```
 
 - Не пропускайте необязательные закрывающие теги (например, `</li>`, `</p>` или `</body>`).
@@ -247,7 +247,7 @@ IE поддерживает использование специального 
 
 <!-- JavaScript внутри документа, внедрять в страницу не нужно -->
 <script>
-	console.log('CSSSR');
+	console.log('lorem ipsum');
 </script>
 ```
 
@@ -263,7 +263,7 @@ IE поддерживает использование специального 
 По умолчанию пути до ресурсов должны быть относительного текущего расположения страницы для просмотра на GitHub Pages.
 
 Относительно корня или абсолютные пути можно использовать в некоторых случаях:
-- Для страниц сайта, находящихся в поддиректории (обычно на хостинге CSSSR или заказчика).
+- Для страниц сайта, находящихся в поддиректории (обычно на хостинге GURUHTML или заказчика).
 - В JavaScript, например, для указания изображения метки на Яндекс.Картах или Google Maps.
 
 Подробнее можно почитать на [htmlbook.ru](http://htmlbook.ru/samhtml/ssylki/absolyutnye-i-otnositelnye-ssylki).
@@ -316,7 +316,7 @@ contacts.html
 
 <input class="input-text" type="text">
 
-<img class="logo" src="images/logo.png" alt="CSSSR">
+<img class="logo" src="images/logo.png" alt="guruhtml">
 ```
 
 
@@ -406,7 +406,7 @@ contacts.html
     - `for` и `id` - для связи надписи и элемента, при клике на надпись элемент будет фокусироваться.
 ```html
 <label for="skype">Skype</label>
-<input id="skype" name="skype" value="csssr.ru">
+<input id="skype" name="skype" value="guruhtml">
 ```
 
 
@@ -416,10 +416,10 @@ contacts.html
 - Для ссылок без адреса вместо `#` вставлять `javascript:void(0);`, чтобы страницу не скроллило вверх.
 ```html
 <!-- Плохо -->
-<a href="#">Портфолио CSSSR</a>
+<a href="#">Портфолио GuruHTML</a>
 
 <!-- Хорошо -->
-<a href="javascript:void(0);">Портфолио CSSSR</a>
+<a href="javascript:void(0);">Портфолио GURUHTML</a>
 ```
 
 - Если элемент, похожий на ссылку, не является ею и событие клика обрабатывается в JavaScript, то стоит заменить тег `a` на `span` или `div` и убрать атрибуты `href` и `target`, для фокусировки можно задать атрибут `tabindex`.
@@ -435,13 +435,13 @@ contacts.html
 
 - Телефоны, email-адреса и Skype-контакт должны быть ссылками:
 	- `tel:+79876543210` - для указания телефона, номер должен начинаться с плюса и состоять только из чисел без спецсимволов типа пробелов, круглых скобок или дефиса.
-	- `mailto:sales@csssr.com` - для указания e-mail.
-	- `skype:csssr.ru?chat` - для указания Skype-контакта.
+	- `mailto:sales@GURUHTML.com` - для указания e-mail.
+	- `skype:GURUHTML.ru?chat` - для указания Skype-контакта.
 
 ```html
 <a href="tel:+79876543210">+7-987-654-32-10</a>
-<a href="mailto:sales@csssr.com">Напишите нам на почту</a>
-<a href="skype:csssr.ru?chat">Напишите нам в Skype</a>
+<a href="mailto:sales@guruhtml.by">Напишите нам на почту</a>
+<a href="skype:guruhtml.by?chat">Напишите нам в Skype</a>
 ```
 
 
@@ -453,11 +453,11 @@ contacts.html
 ```html
 <!-- Неплохо -->
 <span class="avatar">
-	<img src="avatars/csssr.png" alt="CSSSR">
+	<img src="avatars/guruhtml.png" alt="guruhtml">
 </span>
 
 <!-- Лучше -->
-<img class="avatar" src="avatars/csssr.png" alt="CSSSR">
+<img class="avatar" src="avatars/guruhtml.png" alt="guruhtml">
 ```
 
 
@@ -485,12 +485,12 @@ contacts.html
 - В тегах `img` обязательно должен быть атрибут `alt`. Если изображение не меняет свой размер (не *резиновое*), то нужно его указать в атрибутах `width` и `height`.
 ```html
 <!-- Плохо -->
-<img src="images/csssr.png">
+<img src="images/guruhtml.png">
 
 <!-- Хорошо -->
-<img src="images/csssr.png" alt="CSSSR">
+<img src="images/guruhtml.png" alt="guruhtml">
 
-<img src="images/csssr.png" alt="CSSSR" width="128" height="64">
+<img src="images/guruhtml.png" alt="guruhtml" width="128" height="64">
 ```
 
 
