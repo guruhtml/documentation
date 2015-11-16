@@ -73,19 +73,19 @@ nav.nav.nav_pos_left
 - Для нескольких атрибутов запятая не нужна.
 ```jade
 //- Плохо
-input.input-text(type='text', name='project', value='csssr', required)
+input.input-text(type='text', name='project', value='example', required)
 
 //- Хорошо
-input.input-text(type='text' name='project' value='csssr' required)
+input.input-text(type='text' name='project' value='example' required)
 ```
 
 - Используйте одинарные кавычки для текстовых значений.
 ```jade
 //- Плохо
-input.input-text(type="text" name="project" value="csssr" required)
+input.input-text(type="text" name="project" value="example" required)
 
 //- Хорошо
-input.input-text(type='text' name='project' value='csssr' required)
+input.input-text(type='text' name='project' value='example' required)
 ```
 
 - Не давайте необязательные значения атрибутам.
@@ -118,13 +118,13 @@ input.input-text(type='text' name='price' value=24999)
 - Переносите атрибуты новую строку, если их много и/или значения длинные.
 ```jade
 //- Плохо
-input.input-text(type='text' name='project' value='csssr' data-required='Это поле обязательно для заполнения!'  data-hint='Допустимы только символы латинского алфавита `[a-z-A-Z]` и числа `[0-9]`.' required)
+input.input-text(type='text' name='project' value='example' data-required='Это поле обязательно для заполнения!'  data-hint='Допустимы только символы латинского алфавита `[a-z-A-Z]` и числа `[0-9]`.' required)
 
 //- Хорошо
 input.input-text(
     type='text'
     name='project'
-    value='csssr'
+    value='example'
     data-required='Это поле обязательно для заполнения!'
     data-hint='Допустимы только символы латинского алфавита `[a-z-A-Z]` и числа `[0-9]`.'
     required
