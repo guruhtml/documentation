@@ -36,23 +36,23 @@
 ```html
 <!-- Плохо -->
 <div class="block">
-∙∙<div class="block__element">lorem ipsum</div>
+∙∙<div class="block__element">Lorem</div>
 </div>
 
 <!-- Хорошо -->
 <div class="block">
-――――<div class="block__element">lorem ipsum</div>
+――――<div class="block__element">Lorem</div>
 </div>
 ```
 
 - Блочные элементы должны иметь перенос на новую строку, один строчный элемент можно оставлять на месте. Если строчных элементов больше одного или контента достаточно много, то следует переносить.
 ```html
 <!-- Плохо -->
-<div class="block"><div class="block__element">lorem ipsum</div></div>
+<div class="block"><div class="block__element">Lorem</div></div>
 
 <!-- Хорошо -->
 <div class="block">
-  <div class="block__element">lorem ipsum</div>
+  <div class="block__element">Lorem</div>
 </div>
 ```
 
@@ -98,48 +98,48 @@
 ```html
 <!-- Плохо -->
 <div class="block">∙
-  <div class="block__element">lorem ipsum</div>∙∙∙∙
+  <div class="block__element">Lorem</div>∙∙∙∙
 </div>――――――――
 
 <!-- Хорошо -->
 <div class="block">
-  <div class="block__element">lorem ipsum</div>
+  <div class="block__element">Lorem</div>
 </div>
 ```
 
 - Названия тегов, атрибутов и значений свойств (кроме текстовых данных) должны быть в нижнем регистре.
 ```html
 <!-- Плохо -->
-<INPUT TYPE="TEXT" VALUE="LOREM">
+<INPUT TYPE="TEXT" VALUE="Lorem">
 
 <!-- Хорошо -->
-<input type="text" value="lorem">
+<input type="text" value="Lorem">
 ```
 
 - Всегда используйте двойные кавычки `""` для значений атрибутов.
 ```html
 <!-- Плохо -->
 <div class=block>
-  <div class=block__element>lorem ipsum</div>
+  <div class=block__element>Lorem</div>
 </div>
 
 <div class='block'>
-  <div class='block__element'>lorem ipsum</div>
+  <div class='block__element'>Lorem</div>
 </div>
 
 <!-- Хорошо -->
 <div class="block">
-  <div class="block__element">lorem ipsum</div>
+  <div class="block__element">Lorem</div>
 </div>
 ```
 
 - Не добавляйте слэш `/` в конец одиночного тега — в HTML5 он необязателен.
 ```html
 <!-- Плохо -->
-<input type="text" value="lorem"/>
+<input type="text" value="Lorem"/>
 
 <!-- Хорошо -->
-<input type="text" value="lorem">
+<input type="text" value="Lorem">
 ```
 
 - Не пропускайте необязательные закрывающие теги (например, `</li>`, `</p>` или `</body>`).
@@ -247,7 +247,7 @@ IE поддерживает использование специального 
 
 <!-- JavaScript внутри документа, внедрять в страницу не нужно -->
 <script>
-	console.log('lorem ipsum');
+	console.log('Lorem');
 </script>
 ```
 
@@ -260,10 +260,10 @@ IE поддерживает использование специального 
 
 ### <a name="html-absolute-and-relative-paths">Абсолютные и относительные пути к ресурсам</a>
 
-По умолчанию пути до ресурсов должны быть относительного текущего расположения страницы для просмотра на GitHub Pages.
+По умолчанию пути до ресурсов должны быть относительного текущего расположения страницы.
 
 Относительно корня или абсолютные пути можно использовать в некоторых случаях:
-- Для страниц сайта, находящихся в поддиректории (обычно на хостинге guruhtml или заказчика).
+- Для страниц сайта, находящихся в поддиректории (обычно на хостинге).
 - В JavaScript, например, для указания изображения метки на Яндекс.Картах или Google Maps.
 
 Подробнее можно почитать на [htmlbook.ru](http://htmlbook.ru/samhtml/ssylki/absolyutnye-i-otnositelnye-ssylki).
@@ -316,7 +316,7 @@ contacts.html
 
 <input class="input-text" type="text">
 
-<img class="logo" src="images/logo.png" alt="guruhtml">
+<img class="logo" src="images/logo.png" alt="Lorem">
 ```
 
 
@@ -406,7 +406,7 @@ contacts.html
     - `for` и `id` - для связи надписи и элемента, при клике на надпись элемент будет фокусироваться.
 ```html
 <label for="skype">Skype</label>
-<input id="skype" name="skype" value="guruhtml">
+<input id="skype" name="skype" value="skype">
 ```
 
 
@@ -416,10 +416,10 @@ contacts.html
 - Для ссылок без адреса вместо `#` вставлять `javascript:void(0);`, чтобы страницу не скроллило вверх.
 ```html
 <!-- Плохо -->
-<a href="#">Портфолио GuruHTML</a>
+<a href="#">Портфолио</a>
 
 <!-- Хорошо -->
-<a href="javascript:void(0);">Портфолио GuruHTML</a>
+<a href="javascript:void(0);">Портфолио</a>
 ```
 
 - Если элемент, похожий на ссылку, не является ею и событие клика обрабатывается в JavaScript, то стоит заменить тег `a` на `span` или `div` и убрать атрибуты `href` и `target`, для фокусировки можно задать атрибут `tabindex`.
@@ -434,14 +434,14 @@ contacts.html
 ```
 
 - Телефоны, email-адреса и Skype-контакт должны быть ссылками:
-	- `tel:+375296666666` - для указания телефона, номер должен начинаться с плюса и состоять только из чисел без спецсимволов типа пробелов, круглых скобок или дефиса.
+	- `tel:+375299909977` - для указания телефона, номер должен начинаться с плюса и состоять только из чисел без спецсимволов типа пробелов, круглых скобок или дефиса.
 	- `mailto:info@guruhtml.by` - для указания e-mail.
-	- `skype:guruhtml?chat` - для указания Skype-контакта.
+	- `skype:guruhtml.by?chat` - для указания Skype-контакта.
 
 ```html
-<a href="tel:+375296666666">+375296666666</a>
+<a href="tel:+375299909977">+375-29-990-99-77</a>
 <a href="mailto:info@guruhtml.by">Напишите нам на почту</a>
-<a href="skype:guruhtml?chat">Напишите нам в Skype</a>
+<a href="skype:guruhtml.by?chat">Напишите нам в Skype</a>
 ```
 
 
@@ -453,11 +453,11 @@ contacts.html
 ```html
 <!-- Неплохо -->
 <span class="avatar">
-	<img src="avatars/guruhtml.png" alt="guruhtml">
+	<img src="avatars/user.png" alt="Lorem">
 </span>
 
 <!-- Лучше -->
-<img class="avatar" src="avatars/guruhtml.png" alt="guruhtml">
+<img class="avatar" src="avatars/user.png" alt="Lorem">
 ```
 
 
@@ -470,7 +470,7 @@ contacts.html
 	- Паттерн;
 	- Декоративные элементы;
 	- И прочее.
-	
+
 - Используйте тег `img` для изображений:
 	- Аватарок;
 	- Продуктов в витрине;
@@ -479,18 +479,18 @@ contacts.html
 		- Статьи;
 		- Записи в блоге;
 		- Комменатрия.
-	
+
 	Такие изображения должны быть отдельными файлами и находиться в папке `images/temp/`.
-	
+
 - В тегах `img` обязательно должен быть атрибут `alt`. Если изображение не меняет свой размер (не *резиновое*), то нужно его указать в атрибутах `width` и `height`.
 ```html
 <!-- Плохо -->
-<img src="images/guruhtml.png">
+<img src="images/example.png">
 
 <!-- Хорошо -->
-<img src="images/guruhtml.png" alt="guruhtml">
+<img src="images/example.png" alt="Lorem">
 
-<img src="images/guruhtml.png" alt="guruhtml" width="128" height="64">
+<img src="images/example.png" alt="Lorem" width="128" height="64">
 ```
 
 
