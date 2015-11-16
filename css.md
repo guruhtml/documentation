@@ -236,8 +236,6 @@ input[type="text"] {
   - Отображение - цвет, фон и т.п.
   - Прочее - трансформации, поведение и т.п.
 
-Полный список порядка свойст можно посмотреть в конфигурации [CSScomb](https://github.com/CSSSR/csssr-project-template/blob/master/.csscomb.json).
-
 Небольшой пример:
 
 ```css
