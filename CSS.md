@@ -5,18 +5,18 @@
 ## Оглавление
 
 - [CSS](#css)
-    - [CSS синтаксис](#css-syntax)
-    - [Порядок объявления](#css-declaration-order)
-    - [Не используйте @import](#css-import)
-    - [Место для media query](#css-media-queries)
-    - [Свойства с префиксами](#css-prefixed-properties)
-    - [Правила с одиночными объявлениями](#css-single-declarations)
-    - [Сокращенная запись](#css-shorthand)
-    - [Stylus](#css-stylus-syntax)
-    - [Комментарии](#css-comments)
-    - [БЭМ и именование классов](#css-bem)
-    - [Селекторы](#css-selectors)
-    - [Организация кода](#css-organization)
+  - [CSS синтаксис](#css-syntax)
+  - [Порядок объявления](#css-declaration-order)
+  - [Не используйте @import](#css-import)
+  - [Место для media query](#css-media-queries)
+  - [Свойства с префиксами](#css-prefixed-properties)
+  - [Правила с одиночными объявлениями](#css-single-declarations)
+  - [Сокращенная запись](#css-shorthand)
+  - [Stylus](#css-stylus-syntax)
+  - [Комментарии](#css-comments)
+  - [БЭМ и именование классов](#css-bem)
+  - [Селекторы](#css-selectors)
+  - [Организация кода](#css-organization)
 
 ## <a name='#css'>CSS</a>
 
